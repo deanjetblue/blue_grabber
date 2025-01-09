@@ -9,14 +9,14 @@ Original file is located at
 
 # Commented out IPython magic to ensure Python compatibility.
 # Mounting Google Drive Account
-from google.colab import drive
-drive.mount('/gdrive')
+#from google.colab import drive
+#drive.mount('/gdrive')
 # %cd /gdrive
 
 #Installing bs4 OCR tool
-!pip install beautifulsoup4
-!apt-get install ocrmypdf
-!apt install ghostscript python3-tk
+#!pip install beautifulsoup4
+#!apt-get install ocrmypdf
+#!apt install ghostscript python3-tk
 # Importing Packages
 import pandas as pd
 import os
@@ -28,10 +28,11 @@ from bs4 import BeautifulSoup
 import subprocess
 
 # Load the CSV file that includes all ICAO Airports
-icaoFilePath = r'/gdrive/My Drive/JetBlueProjects/8260s/Current ICAOs/2024-12-20 4_17pm.csv'
-folderPath = '/gdrive/My Drive/JetBlueProjects/8260s/Airports/'
-df = pd.read_csv(icaoFilePath)
-icaoList = df.iloc[0:, 0].tolist()
+#icaoFilePath = r'/gdrive/My Drive/JetBlueProjects/8260s/Current ICAOs/2024-12-20 4_17pm.csv'
+#folderPath = '/gdrive/My Drive/JetBlueProjects/8260s/Airports/'
+#df = pd.read_csv(icaoFilePath)
+#icaoList = df.iloc[0:, 0].tolist()
+folderPath = ''
 
 def blue_grabber_8260 (icaos, folderName):
     for icao in icaos:
